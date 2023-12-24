@@ -49,6 +49,9 @@ checksum:
 snapshot:
   name_template: "{{ .Tag }}-next" # Template for naming snapshot releases.
 
-# Changelog section configures how the changelog should be handled.
 changelog:
-  skip: false # Indicates whether to skip generating the changelog.
+  sort: asc
+  filters:
+    exclude:
+      - '^docs:'
+      - '^test:'
