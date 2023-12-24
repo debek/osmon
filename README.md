@@ -9,6 +9,14 @@
 - Overview of memory usage statistics, including total memory, used memory, and available memory.
 - Listing logged-in users and their respective terminals.
 
+## Screenshots
+
+### osmon in Command Line
+![osmon Command Line](images/osmon-command.png)
+
+### osmon for Message of the Day (MOTD)
+![osmon MOTD](images/osmon-motd.png)
+
 [//]: # (## Demo Video)
 
 [//]: # ()
