@@ -1,0 +1,54 @@
+# .goreleaser.yml
+# This is the GoReleaser configuration file which defines how to build, package, and release your application.
+
+project_name: osmon # The name of your project.
+
+# Build section defines how your application should be built.
+builds:
+  - id: osmon
+    main: . # Path to the main source file or directory of your program.
+    binary: osmon # Name of the compiled binary.
+    goos: # List of target operating systems.
+      - linux
+      - darwin
+    goarch: # List of target architectures.
+      - amd64
+      - arm64
+    env: # Environment variables to be set during the build process.
+      - CGO_ENABLED=0
+    ldflags: # Flags to pass to the go compiler.
+      - -s -w
+
+# Archives section defines how to package your binary.
+archives:
+  - id: archive
+    builds:
+      - osmon
+    format: tar.gz # Format for Linux binaries.
+    format_overrides:
+      - goos: darwin
+        format: zip # Format for macOS binaries.
+    wrap_in_directory: true
+    files: # Additional files to include in the archive.
+      - LICENSE
+      - README.md
+
+# Release section configures how to handle GitHub releases.
+release:
+  github:
+    owner: debek
+    name: osmon
+  draft: true # Indicates whether the release should be a draft.
+  prerelease: auto # Automatically set whether the release is a prerelease based on the tag.
+
+# Checksum section generates checksums of your binaries.
+checksum:
+  name_template: 'checksums.txt'
+
+# Snapshot section configures the creation of snapshots.
+snapshot:
+  name_template: "{{ .Tag }}-next" # Template for naming snapshot releases.
+
+# Changelog section configures how the changelog should be handled.
+changelog:
+  skip: false # Indicates whether to skip generating the changelog.
