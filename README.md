@@ -48,7 +48,7 @@ Example:
 You can install **osmon** using the Go tool:
 
 
-`go install github.com/yourusername/osmon@latest`
+`go install github.com/debek/osmon@latest`
 
 After installation, add the Go binary path to your system's PATH to access the `osmon` command from anywhere:
 
