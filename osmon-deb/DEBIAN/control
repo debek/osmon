@@ -1,0 +1,8 @@
+Package: osmon
+Version: 1.0.0
+Section: base
+Priority: optional
+Architecture: amd64
+Maintainer: Daniel Debny debekgithub@gmail.com
+Description: Osmon - command-line system monitoring tool
+
