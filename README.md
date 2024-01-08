@@ -23,7 +23,7 @@
 [//]: # (Check out this demo of **osmon** in action:)
 
 [//]: # ()
-[//]: # ([![Demo Video]&#40;http://img.youtube.com/vi/ID_TWOJEGO_FILMU/0.jpg&#41;]&#40;http://www.youtube.com/watch?v=ID_TWOJEGO_FILMU "osmon Demo"&#41;)
+[//]: # ([![Demo Video]&#40;http://img.youtube.com/vi/VIDEO_ID/0.jpg&#41;]&#40;http://www.youtube.com/watch?v=ID_VIDEO "osmon Demo"&#41;)
 
 ## Applications
 
@@ -97,11 +97,11 @@ If you release a binary version of **osmon**, users can follow these steps:
 
 ## Contributing
 
-If you're interested in contributing to the osmon project, please check our [contribution guidelines](https://chat.openai.com/g/g-yxXXjJ1If-it-gpt4/c/CONTRIBUTE.md). All contributions, from bug reporting to new feature suggestions, are highly appreciated.
+If you're interested in contributing to the osmon project, please check our [contribution guidelines](https://github.com/debek/osmon/blob/main/CONTRIBUTE.md). All contributions, from bug reporting to new feature suggestions, are highly appreciated.
 
 ## License
 
-This project is available under the [MIT License](https://chat.openai.com/g/g-yxXXjJ1If-it-gpt4/c/0c1a0ed0-de56-4ded-8159-e19be6cae7bc).
+This project is available under the [MIT License](https://github.com/debek/osmon/blob/main/LICENSE).
 
 ## Acknowledgments
 
