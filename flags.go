@@ -11,7 +11,7 @@ type intervalFlag struct {
 	value int
 }
 
-// Set jest metodą wywoływaną przez pakiet flag, gdy flaga zostanie ustawiona.
+// Set is a method called by the flag package when the flag is set.
 func (f *intervalFlag) Set(s string) error {
 	f.set = true
 	var err error
@@ -22,7 +22,7 @@ func (f *intervalFlag) Set(s string) error {
 	return nil
 }
 
-// String zwraca reprezentację string flagi.
+// String returns the string representation of the flag
 func (f *intervalFlag) String() string {
 	if !f.set {
 		return "not set"
