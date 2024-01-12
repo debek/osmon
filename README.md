@@ -1,4 +1,5 @@
-# osmon
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdebek%2Fosmon&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+# osmon                
 
 **osmon** is a command-line tool written in Go that provides quick access to basic system information. With **osmon**, you can easily access details such as your host's IP address, system load, memory usage, logged-in users, and much more.
 
