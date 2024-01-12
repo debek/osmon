@@ -1,3 +1,8 @@
+// OSMON
+// Author: Daniel Debny - github.com/debek
+// Year: 24.12.2023
+// Description: An application for displaying system information in the terminal.
+
 package main
 
 import (
