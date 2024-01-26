@@ -4,21 +4,24 @@ import (
 	"flag"
 	"fmt"
 	"strconv"
+	"time"
 )
 
 type intervalFlag struct {
 	set   bool
-	value int
+	value time.Duration
 }
 
 // Set is a method called by the flag package when the flag is set.
 func (f *intervalFlag) Set(s string) error {
 	f.set = true
+	var seconds int
 	var err error
-	f.value, err = strconv.Atoi(s)
+	seconds, err = strconv.Atoi(s)
 	if err != nil {
 		return fmt.Errorf("invalid format for interval: %v", err)
 	}
+	f.value = time.Duration(seconds) * time.Second
 	return nil
 }
 

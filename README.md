@@ -110,6 +110,8 @@ Special thanks to the Go community for creating excellent libraries like `github
 
 ## TO DO
 
+- **osmon --version -> OSInfo version development - fix this problem
+- ** Add help if you would give unexpected argument
 - **Information about IOBS and IOPS**: Include details about read and write operations, and possibly any limits.
 - **Outgoing and Incoming Connections**: Display connections in kilobits or megabits.
 - **Number of Connections**: Show the count of incoming and outgoing connections.

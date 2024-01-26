@@ -9,7 +9,6 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"time"
 )
 
 func main() {
@@ -31,7 +30,7 @@ func main() {
 		if appVersion == "" {
 			appVersion = "development"
 		}
-		fmt.Printf("OSInfo version %s\n", appVersion)
+		fmt.Printf("Osmon version %s\n", appVersion)
 		os.Exit(0)
 	}
 
@@ -41,8 +40,10 @@ func main() {
 	}
 
 	if interval.set {
-		displaySystemInfoInInterval(time.Duration(interval.value) * time.Second)
+		// Display system information in interval
+		displaySystemInfoInInterval(interval.value)
 	} else {
+		// Display system information once
 		displaySystemInfo()
 	}
 }

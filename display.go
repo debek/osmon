@@ -16,14 +16,13 @@ import (
 
 func displaySystemInfoInInterval(interval time.Duration) {
 	for {
-		clearScreen() // Pozostawione w tej funkcji
+		clearScreen()
 		displaySystemInfo()
 		time.Sleep(interval)
 	}
 }
 
 func displaySystemInfo() {
-	// Usunięto wywołanie clearScreen() stąd
 	currentUser, err := user.Current()
 	if err != nil {
 		fmt.Printf("Failed to get current user: %s\n", err)
